@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { stylable } from "../util";
+  import { stylable } from "../common/stylable.js";
 
   type LabelPosition =
     | "top"
