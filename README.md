@@ -34,6 +34,7 @@ when a click event is detected outside of the element.
 # Component
 
 1. [Divisor](#divisor)
+1. [Labeled](#labeled)
 
 
 ## Divisor
@@ -55,4 +56,29 @@ This component is used to create a simple divisor line with rounded edge.
 </script>
 
 <Divisor />
+```
+
+
+## Labeled
+
+This component added a label to the element. The label can be positioned
+on the top, bottom, left, or right of the element. Like regular `label`
+tag, by clicking on the label, the element will be focused.
+
+### Props
+
+| Name         | Type     | Default      | Description                                                           |
+| ---          | ---      | ---          | ---                                                                   |
+| `gap?`       | `number` | `5` (in px)  | The gap between the element and the label                             |
+| `label?`     | `string` | `''`         | The text of the label                                                 |
+| `position?`  | `string` | `top`        | The position of the label. Can be `top`, `bottom`, `left`, or `right` |
+
+```svelte
+<script>
+  import { Labeled } from 'svelte-components'
+</script>
+
+<Labeled label="Label">
+  <input type="text" />
+</Labeled>
 ```
