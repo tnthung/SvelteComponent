@@ -1,7 +1,7 @@
 {
-	"name": "svelte-component",
+	"name": "@tnthung/svelte-component",
 	"version": "0.0.1",
-  "license": "./LICENSE",
+  "license": "MIT",
   "description": "A Simple Svelte Component Library",
   "keywords": [
     "svelte",
